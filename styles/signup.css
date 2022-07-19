@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+:root{
+    --darkest: #041C32;
+    --darker: #04293A;
+    --light: #064663;
+    --lighter: #ECB365;
+    --mix: #02927d;
+    --font: #478fe2;
+}
+::-webkit-scrollbar{
+    width: 4px;
+    background-color: var(--darkest);
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 2rem;
+}
+body{
+    overflow-x: hidden;
+    background-color: #1f1a25;
+}
+#particles-js{
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: inherit;
+    background-size: cover;
+    background-color: #1f1a25;
+}
+
+/* Headers */
+.headers{
+    height: 9rem;
+}
+.headers .left{
+    width: 70%;
+    float: left;
+}
+.headers .left .home-link{
+    margin: 1rem 0 0 1rem;
+}
+.headers .left .home-link a{
+    text-decoration: none;
+    color: var(--font);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 150%;
+    transition: all .15s ease;
+}
+.headers .left .home-link a:hover{
+    color: white;
+    font-size: 1.75rem;
+}
+.headers .left .heading{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 300%;
+    color: var(--font);
+    margin: 0 0 0 1rem;
+}
+.headers .right{
+    width: 30%;
+    float: right;
+}
+.headers .right .logo{
+    background-image: url(../img/Logo[White].png);
+    background-size: cover;
+    min-height: 7rem;
+    min-width: 7rem;
+    margin: 1rem 1rem 0 0;
+    float: right;
+}
+/* Headers */
+
+/* Sign up Form */
+.sign-up-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-up{
+    background-color: #15172b;
+    border-radius: 2rem;
+    height: 75vh;
+    width: 35%;
+    font-family: 'Roboto Mono', monospace;
+    color: #eee;
+    padding: 1rem;
+    overflow-y: auto;
+}
+.sign-up .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+.sign-up .title{
+    font-size: 3rem;
+}
+.sign-up .subtitle{
+    font-size: 1.25rem;
+}
+
+.sign-up .form form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.sign-up .form form .submit{
+    margin-top: 1.5rem;
+    width: 80%;
+    background-color: var(--font);
+    color: white;
+    transition: all 0.15s ease;
+}
+.sign-up .form form .submit:hover{
+    cursor: pointer;
+    background-color: rgba(22, 136, 169, 0.8);
+}
+.sign-up input, button{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #303245;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+}
+
+/* Animation */
+.input-container {
+    height: 2rem;
+    position: relative;
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.input-container.email{
+    margin: 2.5rem 0rem 1rem 0rem;
+}
+.input-container > input {
+    background-color: transparent;
+    border: 3px solid #303245;
+    transition: all 0.5s ease;
+    color: white;
+    width: 100%;
+}
+.input-container input:focus{
+    border-color: #478fe2;
+}
+.input-container .placeholder{
+    transition: all 0.15s ease;
+    transform: translate(1rem, -2.5rem);
+    width: fit-content;
+    float: left;
+}
+input:focus ~ .placeholder,
+input:not(:placeholder-shown) ~ .placeholder {
+    transform: translate(1rem, -5rem);
+}
+input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+input:focus ~ .placeholder {
+    color: #58afd1;
+    letter-spacing: 0.15rem;
+    font-size: .75rem;
+}
+/* Animation */
+/* Sign up Form */
+
+form div {
+    width: 90%;
+}
+
+/* Login */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login button{
+    margin-top: 1rem;
+    background: none;
+    font-size: 1rem;
+    width: 30%;
+    color: #58afd1;
+    border-radius:0 ;
+    transition: all 0.25s ease-in-out;
+}
+
+.placeholder-already-in-use{
+    padding: 0;
+    color: red;
+    margin: 0;
+    font-size: 0.65rem;
+    transition: all 0.15s ease;
+    transform: translate(1rem, -2.5rem);
+    width: fit-content;
+    float: left;
+}
+
+/* Login */
+
+/* Media Queries */
+@media all and (max-width: 900px)
+{
+    .sign-up{
+        width: 95%;
+    }
+    .login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login button{
+        width: 90%;
+    }
+    .headers .right .logo{
+        margin: 1rem 0rem 0 0;
+    }
+}
