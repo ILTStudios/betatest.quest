@@ -29,10 +29,10 @@ require_once("./connect.php");
         $_SESSION['points'] = $data['points'];
         $_SESSION['play-level'] = $data['levels'];
         $_SESSION['banned'] = $data['banned'];
-        header("Location: http://localhost/BetaTest/pages/play-screens/play.php?answer=");
+        header("Location: /BetaTest/pages/play-screens/play.php?answer=");
    }
    else{
-     header("Location: http://localhost/BetaTest/pages/loginpage.php");
+     header("Location: /BetaTest/pages/loginpage.php");
      //die('Username or password incorrect.');
    }
 ?>

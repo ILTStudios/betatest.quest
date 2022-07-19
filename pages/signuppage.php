@@ -77,7 +77,7 @@
                                         $stmt = $mysqli->prepare("INSERT INTO `users` (`user_id`, `fullname`, `username`, `password`, `email`,`day_time`,`discord_id`,`institution`) VALUES (?, ?, ?, ?, ?, ?, ?, ?);");            $stmt->bind_param("isssssss", $user_id, $fullname,  $username, $password, $email, $datetime, $discord ,$institution);
                                         $stmt->execute();
                                         $stmt->close();
-                                        header("Location: http://localhost/BetaTest/pages/loginpage.php ");
+                                        header("Location: /BetaTest/pages/loginpage.php ");
                                         break;
                                     }
                                 }
