@@ -16,7 +16,7 @@
         <div class="headers">
             <div class="left">
                 <div class="home-link">
-                    <a href="../index.html">BetaTest</a>
+                    <a href="../index.php">BetaTest</a>
                 </div>
                 <div class="heading">Register</div>
             </div>

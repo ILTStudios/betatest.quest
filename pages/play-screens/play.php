@@ -36,13 +36,13 @@ foreach($data as $x => $value){
            <!-- Navbar -->
            <div class="headers">
             <div class="left">
-              <div class="home-link"><a href="../../index.html">BetaTest</a></div>
+              <div class="home-link"><a href="../../index.php">BetaTest</a></div>
               <div class="heading">Play</div>
             </div>
 
             <div class="right">
               <a href="../../pages\play-screens\logout.php">Logout</a>
-              <a href="../../index.html">Home</a>
+              <a href="../../index.php">Home</a>
               <a class = 'current' href="../play-screens/play.php?answer=">Play</a>
               <a href="../play-screens/profile.php">Profile</a>
               <a href="../play-screens/leaderboard.php">Leaderboard</a>

@@ -30,13 +30,13 @@ $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <div class="header">
             <div class="left">
                 <div class="home-link">
-                    <a href="../../index.html" >BetaTest</a>
+                    <a href="../../index.php" >BetaTest</a>
                 </div>
                 <div class="heading">Leaderboard</div>
             </div>
             <div class="right">
                 <a href="../../pages\play-screens\logout.php">Logout</a>
-                <a href="../../index.html">Home</a>
+                <a href="../../index.php">Home</a>
                 <a href="../play-screens/play.php?answer=">Play</a>
                 <a href="../play-screens/profile.php">Profile</a>
                 <a class = 'current' href="../play-screens/leaderboard.php">Leaderboard</a>
